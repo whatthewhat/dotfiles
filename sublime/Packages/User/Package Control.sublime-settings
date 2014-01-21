@@ -1,0 +1,22 @@
+{
+	"auto_upgrade_last_run": null,
+	"installed_packages":
+	[
+		"Apiary.io Blueprint",
+		"CoffeeScript",
+		"GitGutter",
+		"Haml",
+		"Handlebars",
+		"HTML2Haml",
+		"LESS",
+		"Markdown Preview",
+		"Package Control",
+		"RailsCasts Colour Scheme",
+		"Theme - Soda",
+		"TrailingSpaces"
+	],
+	"repositories":
+	[
+		"https://sublime.wbond.net/testing/packages.json"
+	]
+}

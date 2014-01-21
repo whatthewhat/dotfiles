@@ -1,0 +1,11 @@
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Sublime Text
+sublime/Packages/User/Package Control.last-run
+sublime/Packages/User/Package Control.ca-list
+sublime/Packages/User/Package Control.ca-bundle
+sublime/Packages/User/Package Control.system-ca-bundle
+sublime/Packages/User/Package Control.cache/
+sublime/Packages/User/Package Control.ca-certs/
