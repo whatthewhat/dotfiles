@@ -25,6 +25,8 @@ export DYLD_LIBRARY_PATH="/opt/oracle/instantclient_11_2"
 export SQLPATH="/opt/oracle/instantclient_11_2/"
 
 # Aliases
+
+## Git
 alias gl='git smart-log'
 alias gup='git smart-pull'
 alias gm='git smart-merge'
@@ -33,16 +35,20 @@ alias gco='git checkout'
 alias dev='git checkout develop && gup'
 alias m='git checkout master && gup'
 alias gad='git add .'
+alias amend='git commit --amend --no-edit'
 
+## Projects
 alias dont='cd /Users/whatthewhat/source/dontspoil'
 alias cb='cd /Users/whatthewhat/Dropbox/crmbox'
 alias api='cd /Users/whatthewhat/Dropbox/crmbox/crmbox-api'
 
+## Rails
 alias rc='rails console'
 alias rs='rails server'
 alias migrate='rake db:migrate && rake db:test:prepare'
 alias test1='rake db:schema:dump && rm db/test.sqlite3 && RAILS_ENV=test rake db:schema:load'
 
+## Other
 alias i='vim /Users/whatthewhat/ideas.mdown'
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
