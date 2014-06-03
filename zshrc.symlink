@@ -34,8 +34,10 @@ alias gmff='git merge --ff-only'
 alias gco='git checkout'
 alias dev='git checkout develop && gup'
 alias m='git checkout master && gup'
-alias gad='git add .'
+alias gad='git add --all .'
 alias amend='git commit --amend --no-edit'
+
+alias delete-merged='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
 
 ## Projects
 alias dont='cd /Users/whatthewhat/source/dontspoil'
