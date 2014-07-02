@@ -19,11 +19,6 @@ export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export EDITOR=vim #"subl -w"
 
-# Oracle
-export NLS_LANG=AMERICAN_AMERICA.UTF8
-export DYLD_LIBRARY_PATH="/opt/oracle/instantclient_11_2"
-export SQLPATH="/opt/oracle/instantclient_11_2/"
-
 # Aliases
 
 ## Git
@@ -48,7 +43,6 @@ alias api='cd /Users/whatthewhat/Dropbox/crmbox/crmbox-api'
 alias rc='rails console'
 alias rs='rails server'
 alias migrate='rake db:migrate && rake db:test:prepare'
-alias test1='rake db:schema:dump && rm db/test.sqlite3 && RAILS_ENV=test rake db:schema:load'
 
 ## Other
 alias i='vim /Users/whatthewhat/ideas.mdown'
