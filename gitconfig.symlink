@@ -1,0 +1,13 @@
+[user]
+  name = Mikhail Topolskiy
+  email = mikhail.topolskiy@gmail.com
+[filter "media"]
+  clean = git-media-clean %f
+  smudge = git-media-smudge %f
+[push]
+  default = matching
+[alias]
+  cb = symbolic-ref HEAD --short
+
+  sb = !ls .git/refs/remotes/*/$(git cb) | cut -d/ -f4,5 | \
+        xargs git show-branch $(git cb)

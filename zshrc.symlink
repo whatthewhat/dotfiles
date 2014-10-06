@@ -33,6 +33,7 @@ alias gad='git add --all .'
 alias amend='git commit --amend --no-edit'
 
 alias delete-merged='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
+alias remotes='git fetch --all && git sb'
 
 ## Projects
 alias dont='cd /Users/whatthewhat/source/dontspoil'
