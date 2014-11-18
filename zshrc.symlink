@@ -43,7 +43,7 @@ alias api='cd /Users/whatthewhat/Dropbox/crmbox/crmbox-api'
 ## Rails
 alias rc='rails console'
 alias rs='rails server'
-alias migrate='rake db:migrate && rake db:test:prepare'
+alias migrate='rake db:migrate'
 
 ## Other
 alias i='vim /Users/whatthewhat/ideas.mdown'
