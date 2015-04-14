@@ -1,9 +1,14 @@
 {
 	"auto_upgrade_last_run": null,
+	"in_process_packages":
+	[
+	],
 	"installed_packages":
 	[
 		"Apiary.io Blueprint",
+		"BeautifyRuby",
 		"CoffeeScript",
+		"EditorConfig",
 		"GitGutter",
 		"Haml",
 		"Handlebars",

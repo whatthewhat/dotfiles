@@ -9,3 +9,7 @@ sublime/Packages/User/Package Control.ca-bundle
 sublime/Packages/User/Package Control.system-ca-bundle
 sublime/Packages/User/Package Control.cache/
 sublime/Packages/User/Package Control.ca-certs/
+
+*.merged-ca-bundle
+
+*.user-ca-bundle
