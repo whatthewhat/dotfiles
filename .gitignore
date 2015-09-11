@@ -13,3 +13,5 @@ sublime/Packages/User/Package Control.ca-certs/
 *.merged-ca-bundle
 
 *.user-ca-bundle
+
+sublime/Packages/User/WakaTime.sublime-settings

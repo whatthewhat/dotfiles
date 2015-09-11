@@ -6,6 +6,7 @@
 	"installed_packages":
 	[
 		"Apiary.io Blueprint",
+		"Babel",
 		"BeautifyRuby",
 		"CoffeeScript",
 		"EditorConfig",
@@ -19,7 +20,8 @@
 		"RailsCasts Colour Scheme",
 		"Railscasts Extended",
 		"Theme - Soda",
-		"TrailingSpaces"
+		"TrailingSpaces",
+		"WakaTime"
 	],
 	"repositories":
 	[
