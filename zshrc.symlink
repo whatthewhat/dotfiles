@@ -37,13 +37,16 @@ alias remotes='git fetch --all && git sb'
 
 ## Projects
 alias dont='cd /Users/whatthewhat/source/dontspoil'
-alias cb='cd /Users/whatthewhat/Dropbox/crmbox'
-alias api='cd /Users/whatthewhat/Dropbox/crmbox/crmbox-api'
+alias api='cd /Users/whatthewhat/source/visible/api'
+alias vbl='cd /Users/whatthewhat/source/visible'
 
 ## Rails
 alias rc='rails console'
 alias rs='rails server'
 alias migrate='rake db:migrate'
+
+## JS
+alias nom="rm -rf node_modules && npm cache clear && npm i"
 
 ## Other
 alias i='vim /Users/whatthewhat/ideas.mdown'
