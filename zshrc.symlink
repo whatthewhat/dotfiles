@@ -31,6 +31,7 @@ alias dev='git checkout develop && gup'
 alias m='git checkout master && gup'
 alias gad='git add --all .'
 alias amend='git commit --amend --no-edit'
+alias gt='git tag -l --sort=v:refname | tail -n 10'
 
 alias delete-merged='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
 alias remotes='git fetch --all && git sb'

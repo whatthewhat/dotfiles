@@ -13,3 +13,5 @@
 
   sb = !ls .git/refs/remotes/*/$(git cb) | cut -d/ -f4,5 | \
         xargs git show-branch $(git cb)
+[tag]
+  sort = version:refname
