@@ -9,3 +9,7 @@ ln -sf ${SCRIPT_DIR}/janus ~/.janus
 # iTerm2 config
 defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "${SCRIPT_DIR}/iterm2"
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+
+# vscode
+ln -sf ${SCRIPT_DIR}/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+ln -sf ${SCRIPT_DIR}/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
