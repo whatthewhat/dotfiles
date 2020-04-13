@@ -74,4 +74,5 @@ alias nombom='npm cache clear && bower cache clean && rm -rf node_modules bower_
 ## Other
 alias i='vim /Users/whatthewhat/ideas.mdown'
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+# asdf
+. /usr/local/opt/asdf/asdf.sh
