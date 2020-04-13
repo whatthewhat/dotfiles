@@ -74,8 +74,11 @@
     ],
     "extensions.ignoreRecommendations": false,
     "window.zoomLevel": 0,
-    "search.location": "panel",
     "[ruby]": {},
     "editor.tabSize": 2,
-    "workbench.colorTheme": "One Dark Pro"
+    "workbench.colorTheme": "One Dark Pro",
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.fontSize": 14
   }
