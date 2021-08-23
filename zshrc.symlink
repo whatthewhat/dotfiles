@@ -27,8 +27,13 @@ alias gup='git smart-pull'
 alias gm='git smart-merge'
 alias gmff='git merge --ff-only'
 alias gco='git checkout'
-alias dev='git checkout develop && gup'
-alias m='git checkout master && gup'
+m () {
+  if git show-ref --quiet refs/heads/main
+    then git checkout main && git smart-pull;
+  elif git show-ref --quiet refs/heads/master
+    then git checkout master && git smart-pull;
+  fi
+}
 alias gad='git add --all .'
 alias amend='git commit --amend --no-edit'
 gt () {
@@ -45,15 +50,10 @@ alias remotes='git fetch --all && git sb'
 alias api='cd /Users/whatthewhat/source/visible/api'
 alias vbl='cd /Users/whatthewhat/source/visible'
 
-## Rails
-alias rc='rails console'
-alias rs='rails server'
-alias migrate='rake db:migrate'
-
 ## Docker
 alias dk='docker'
 alias dkc='docker-compose'
-alias dkcbe='docker-compose run app bundle exec $1'
+alias s='docker-compose exec spring $1'
 
 dsa () {
   docker stop $(docker ps -a -q)
