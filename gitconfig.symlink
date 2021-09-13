@@ -15,3 +15,5 @@
         xargs git show-branch $(git cb)
 [tag]
   sort = version:refname
+[color]
+  ui = always
