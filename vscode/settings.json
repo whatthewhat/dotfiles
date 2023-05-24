@@ -73,12 +73,76 @@
       "workbench.action.toggleMaximizedPanel"
     ],
     "extensions.ignoreRecommendations": false,
-    "window.zoomLevel": 0,
-    "[ruby]": {},
+    "[ruby]": {
+      "editor.defaultFormatter": "ruby-syntax-tree.vscode-syntax-tree"
+    },
     "editor.tabSize": 2,
-    "workbench.colorTheme": "One Dark Pro",
     "[javascript]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "editor.fontSize": 14
+    "editor.fontSize": 14,
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[rust]": {
+      "editor.defaultFormatter": "rust-lang.rust"
+    },
+    "vscode-ember-test-runner.testPageUrl": "http://localhost:4200/tests/index.html?hidepassed",
+    "gitlens.blame.highlight.locations": [
+      "gutter",
+      "line"
+    ],
+    "gitlens.codeLens.recentChange.enabled": false,
+    "gitlens.codeLens.authors.enabled": false,
+    "[gemfile]": {
+      "editor.defaultFormatter": "mbessey.vscode-rufo"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "docker.showStartPage": false,
+    "[handlebars]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "ruby.rubocop.executePath": "/Users/whatthewhat/.asdf/shims/",
+    "editor.copyWithSyntaxHighlighting": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "vscode-run-rspec-file.custom-command": "s rspec",
+    "syntaxTree.singleQuotes": true,
+    "syntaxTree.printWidth": 100,
+    "[dart]": {
+      "editor.formatOnSave": true,
+      "editor.formatOnType": true,
+      "editor.rulers": [
+        80
+      ],
+      "editor.selectionHighlight": false,
+      "editor.suggest.snippetsPreventQuickSuggestions": false,
+      "editor.suggestSelection": "first",
+      "editor.tabCompletion": "onlySnippets",
+      "editor.wordBasedSuggestions": false
+    },
+    "dart.debugExternalPackageLibraries": false,
+    "dart.debugSdkLibraries": false,
+    "[php]": {
+      "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    },
+    "[xml]": {
+      "editor.defaultFormatter": "mikeburgh.xml-format"
+    },
+    "[astro]": {
+      "editor.defaultFormatter": "astro-build.astro-vscode"
+    },
+    "syntaxTree.additionalPlugins": [
+      "plugin/disable_ternary"
+    ],
+    "workbench.colorTheme": "One Dark Pro"
   }
