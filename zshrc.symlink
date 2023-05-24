@@ -9,12 +9,12 @@ ZSH_THEME="robbyrussell"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git bundler brew gem)
+plugins=(git brew gem)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/share/npm/bin
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/share/npm/bin:$HOME/.cargo/bin
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export EDITOR=vim
@@ -75,4 +75,8 @@ alias nombom='npm cache clear && bower cache clean && rm -rf node_modules bower_
 alias i='vim /Users/whatthewhat/ideas.mdown'
 
 # asdf
-. /usr/local/opt/asdf/asdf.sh
+. /usr/local/opt/asdf/libexec/asdf.sh
+
+# pnpm
+export PNPM_HOME="/Users/whatthewhat/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
