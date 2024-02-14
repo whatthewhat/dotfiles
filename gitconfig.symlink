@@ -16,4 +16,12 @@
 [tag]
   sort = version:refname
 [color]
-  ui = always
+  ui = auto
+[init]
+  defaultBranch = main
+[rerere]
+  enabled = true
+[column]
+  ui = auto
+[branch]
+  sort = -committerdate

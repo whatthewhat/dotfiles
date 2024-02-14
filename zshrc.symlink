@@ -22,16 +22,14 @@ export EDITOR=vim
 # Aliases and custom functions
 
 ## Git
-alias gl='git smart-log'
-alias gup='git smart-pull'
-alias gm='git smart-merge'
+alias gup='git pull --rebase'
 alias gmff='git merge --ff-only'
 alias gco='git checkout'
 m () {
   if git show-ref --quiet refs/heads/main
-    then git checkout main && git smart-pull;
+    then git checkout main && git pull --rebase;
   elif git show-ref --quiet refs/heads/master
-    then git checkout master && git smart-pull;
+    then git checkout master && git pull --rebase;
   fi
 }
 alias gad='git add --all .'
@@ -74,8 +72,10 @@ alias nombom='npm cache clear && bower cache clean && rm -rf node_modules bower_
 ## Other
 alias i='vim /Users/whatthewhat/ideas.mdown'
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # asdf
-. /usr/local/opt/asdf/libexec/asdf.sh
+. $(brew --prefix asdf)/libexec/asdf.sh
 
 # pnpm
 export PNPM_HOME="/Users/whatthewhat/Library/pnpm"
