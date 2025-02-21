@@ -50,8 +50,8 @@ alias vbl='cd /Users/whatthewhat/source/visible'
 
 ## Docker
 alias dk='docker'
-alias dkc='docker-compose'
-alias s='docker-compose exec spring $1'
+alias dkc='docker compose'
+alias s='docker compose exec spring $1'
 
 dsa () {
   docker stop $(docker ps -a -q)
