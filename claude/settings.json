@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep:*)",
+      "Bash(docker compose exec:*)",
+      "Bash(npm uninstall:*)"
+    ],
+    "defaultMode": "default"
+  }
+}
