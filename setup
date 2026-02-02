@@ -8,3 +8,13 @@ ln -sf ${SCRIPT_DIR}/zshrc.symlink ~/.zshrc
 # Claude Code config
 mkdir -p ~/.claude
 ln -sf ${SCRIPT_DIR}/claude/settings.json ~/.claude/settings.json
+ln -sfn ${SCRIPT_DIR}/claude/skills ~/.claude/skills
+
+# Share custom skills with all AI agents
+for skill_dir in ${SCRIPT_DIR}/claude/skills/*/; do
+  skill_name=$(basename "$skill_dir")
+  for agent_dir in ~/.agents/skills ~/.copilot/skills ~/.gemini/skills ~/.config/agents/skills; do
+    mkdir -p "$agent_dir"
+    ln -sfn ~/.claude/skills/"$skill_name" "$agent_dir"/"$skill_name"
+  done
+done
