@@ -3,11 +3,8 @@
   email = mikhail.topolskiy@gmail.com
 [credential]
   helper = osxkeychain
-[filter "media"]
-  clean = git-media-clean %f
-  smudge = git-media-smudge %f
 [push]
-  default = matching
+  default = simple
 [alias]
   cb = symbolic-ref HEAD --short
 

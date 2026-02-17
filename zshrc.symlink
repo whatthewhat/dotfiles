@@ -14,7 +14,6 @@ plugins=(git brew)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export EDITOR=vim
@@ -23,8 +22,6 @@ export EDITOR=vim
 
 ## Git
 alias gup='git pull --rebase'
-alias gmff='git merge --ff-only'
-alias gco='git checkout'
 m () {
   if git show-ref --quiet refs/heads/main
     then git checkout main && git pull --rebase;
@@ -36,17 +33,17 @@ alias gad='git add --all .'
 alias amend='git commit --amend --no-edit'
 gt () {
   if (( $# == 0 ))
-  then git tag -l --sort=v:refname | tail -n 10; fi
+  then git tag -l | tail -n 10; fi
   if (( $# > 0 ))
   then git tag "$@"; fi
 }
 
-alias delete-merged='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
+alias delete-merged='git branch --merged | grep -Ev "(\*|main|master)" | xargs -n 1 git branch -d'
 alias remotes='git fetch --all && git sb'
 
 ## Projects
-alias api='cd /Users/whatthewhat/source/visible/api'
-alias vbl='cd /Users/whatthewhat/source/visible'
+alias api='cd $HOME/source/visible/api'
+alias vbl='cd $HOME/source/visible'
 
 ## Docker
 alias dk='docker'
@@ -55,34 +52,23 @@ s () {
   docker compose exec spring "$@"
 }
 
-dsa () {
-  docker stop $(docker ps -a -q)
-}
-
-dra () {
-  docker rm $(docker ps -a -q)
-}
-
-drmia () {
-  docker rmi $(docker images | grep '^<none>' | awk '{print $3}')
-}
+alias dsa='docker stop $(docker ps -q)'
+alias dra='docker container prune -f'
+alias drmia='docker image prune -f'
 
 ## JS
-alias nom='rm -rf node_modules && npm i'
+alias nom='rm -rf node_modules && pnpm i'
 
 ## Other
-alias i='vim /Users/whatthewhat/ideas.mdown'
+alias i='vim $HOME/ideas.md'
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # asdf
 . $(brew --prefix asdf)/libexec/asdf.sh
 
-# pnpm
-export PNPM_HOME="/Users/whatthewhat/Library/pnpm"
-export PATH="$PNPM_HOME:$PATH"
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
 # Added by Antigravity
-export PATH="/Users/whatthewhat/.antigravity/antigravity/bin:$PATH"
+export PATH="$HOME/.antigravity/antigravity/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
